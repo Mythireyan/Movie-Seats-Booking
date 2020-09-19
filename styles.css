@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #242333;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center; 
+	height: 100vh;
+	margin: 0;
+	font-size: 28px;
+}
+
+.movie-container{
+	margin-bottom: 20px;
+}
+
+.movie-container select {
+	margin-left: 5px;
+	border: none;
+	border-radius: 5px;
+	padding:5px 10px;
+}
+
+.seat{
+	background-color: #444451;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	margin-bottom: 5px;	
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.container{
+	perspective: 1000px;
+	margin-bottom: 10px;
+}
+
+.seat.selected{
+	background-color: #6feaf6;
+}
+
+.seat.occupied{
+	background-color: #fff;
+}
+
+.seat:nth-of-type(2){
+	margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2){
+	margin-left: 20px;
+}
+
+.seat:not(.occupied):hover{
+	cursor: pointer;
+	transform: scaleY(1.2);
+}
+
+.showcase .seat:not(.occupied):hover{
+	cursor:default;
+	transform: scaleY(1);
+}
+
+.rows{
+	display: flex;
+}
+
+.showcase{
+	background-color: rgba(0,0,0,0.1);
+	color: #777;
+	list-style: none;
+	padding: 5px 5px;
+	display: flex;
+}
+
+.showcase li{
+	display: flex;
+	align-items: center;
+	margin: 5px 15px;
+}
+
+.showcase li small{
+	margin-left: 2px;
+}
+
+.screen{
+	background-color: #fff;
+	height: 70px;
+	width: 100%;
+	margin: 20px 0px;
+	transform: rotateX(-45deg);
+	box-shadow: 2px 2px 10px rgba(255,255,255,0.7);
+}
+
+p span{
+	color: #6feaf6;
+	font-style: bold;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
